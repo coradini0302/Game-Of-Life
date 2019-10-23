@@ -96,42 +96,42 @@ namespace Game_Of_Life
                     int vizinhos = 0;
                     //campos da matrix.
 
-                    if (campos[iacima, jLinks].Fill == Brushes.Yellow)
+                    if (campos[iacima, jLinks].Fill == Brushes.OrangeRed)
                     {
                         vizinhos++;
                     }
 
-                    if (campos[iacima, j].Fill == Brushes.Yellow)
+                    if (campos[iacima, j].Fill == Brushes.OrangeRed)
                     {
                         vizinhos++;
                     }
 
-                    if (campos[iacima, jDireito].Fill == Brushes.Yellow)
+                    if (campos[iacima, jDireito].Fill == Brushes.OrangeRed)
                     {
                         vizinhos++;
                     }
 
-                    if (campos[i, jLinks].Fill == Brushes.Yellow)
+                    if (campos[i, jLinks].Fill == Brushes.OrangeRed)
                     {
                         vizinhos++;
                     }
 
-                    if (campos[i, jDireito].Fill == Brushes.Yellow)
+                    if (campos[i, jDireito].Fill == Brushes.OrangeRed)
                     {
                         vizinhos++;
                     }
 
-                    if (campos[ientreCelulas, jLinks].Fill == Brushes.Yellow)
+                    if (campos[ientreCelulas, jLinks].Fill == Brushes.OrangeRed)
                     {
                         vizinhos++;
                     }
 
-                    if (campos[ientreCelulas, j].Fill == Brushes.Yellow)
+                    if (campos[ientreCelulas, j].Fill == Brushes.OrangeRed)
                     {
                         vizinhos++;
                     }
 
-                    if (campos[ientreCelulas, jDireito].Fill == Brushes.Yellow)
+                    if (campos[ientreCelulas, jDireito].Fill == Brushes.OrangeRed)
                     {
                         vizinhos++;
                     }
@@ -152,7 +152,7 @@ namespace Game_Of_Life
                     }
                     else if (Qtdvizinhos[i, j] == 3)
                     {
-                        campos[i, j].Fill = Brushes.Yellow;
+                        campos[i, j].Fill = Brushes.OrangeRed;
                     }
                 }
             }
@@ -161,7 +161,7 @@ namespace Game_Of_Life
         private void R_MouseDown(object sender, MouseButtonEventArgs e)
         {
             ((Rectangle) sender).Fill =
-                (((Rectangle) sender).Fill == Brushes.DarkGray) ? Brushes.Yellow : Brushes.DarkGray;
+                (((Rectangle) sender).Fill == Brushes.DarkGray) ? Brushes.OrangeRed : Brushes.DarkGray;
         }
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
